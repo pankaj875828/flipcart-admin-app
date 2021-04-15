@@ -4,7 +4,8 @@ const initstate={
     name:"Pankaj"
 };
 
-export default (state=initstate,action) =>{
+export default(state=initstate,action)=>{
+    console.log(action)
     switch(action.payload){
         case authConstants.LOGIN_REQUEST:
             state={
